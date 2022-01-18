@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.93e8a56a.css",
+    "main.js": "/static/js/main.368e4677.js",
+    "static/js/787.6ee238f9.chunk.js": "/static/js/787.6ee238f9.chunk.js",
+    "static/media/sur.gif": "/static/media/sur.b961cc70bda6a350625f.gif",
+    "static/media/xmas.gif": "/static/media/xmas.e9234f6458339e4e47ac.gif",
+    "static/media/unighi.gif": "/static/media/unighi.ebfe91fa82d4e9f7cf6a.gif",
+    "static/media/hallow.gif": "/static/media/hallow.a7a8ae31075bedb093bf.gif",
+    "static/media/wgan.gif": "/static/media/wgan.7edb8761d1922bffb51c.gif",
+    "static/media/recom.gif": "/static/media/recom.9c0e63b6aa7e9900da07.gif",
+    "static/media/hero3.png": "/static/media/hero3.fc8503a99378cb1fb400.png",
+    "static/media/glance.jpg": "/static/media/glance.62cf6849f61d19265a4c.jpg",
+    "static/media/WiggleGAN.gif": "/static/media/WiggleGAN.0c960cb1bc56fce9e64c.gif",
+    "static/media/sNNake.gif": "/static/media/sNNake.9291a1eb3cd8f3011f59.gif",
+    "static/media/portfolio-1.jpg": "/static/media/portfolio-1.c73921efe602f92884b6.jpg",
+    "index.html": "/index.html",
+    "main.93e8a56a.css.map": "/static/css/main.93e8a56a.css.map",
+    "main.368e4677.js.map": "/static/js/main.368e4677.js.map",
+    "787.6ee238f9.chunk.js.map": "/static/js/787.6ee238f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93e8a56a.css",
+    "static/js/main.368e4677.js"
+  ]
+}
