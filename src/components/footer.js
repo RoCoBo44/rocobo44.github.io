@@ -12,7 +12,7 @@ function Footer() {
                     <div class="footer-menu">
                         <p>rocobo44@gmail.com</p>
                     </div>
-                    <div class="footer-social">
+                    <div class="social">
                         <a href="https://twitter.com/RoCobo4"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.instagram.com/rocobo/"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/rocobo/"><i class="fab fa-linkedin-in"></i></a>

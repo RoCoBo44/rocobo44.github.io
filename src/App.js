@@ -15,7 +15,8 @@ class App extends React.Component {
   // Defining WOW 
   componentDidMount() {
     new WOW.WOW({
-      live: false
+      live: false,
+      mobile: false,    
   }).init();
   }
   

@@ -15,8 +15,8 @@ function Experience() {
                 {experience_data && experience_data.map((item, index) => {
                 if  (index % 2 === 0) 
                 return(
-                  <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                      <div class="timeline-text">
+                  <div class={"timeline-item right wow slideInRight "} data-wow-delay="0.1s">
+                      <div class={" timeline-text "} id={(item.star ? 'star' : '')}>
                           <div class="timeline-date">{item.date}</div>
                           <h2>{item.rol} </h2>
                           <h4>{item.place}</h4>
@@ -31,7 +31,7 @@ function Experience() {
                 else
                 return(
                   <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                      <div class="timeline-text">
+                      <div class="timeline-text" id={(item.star ? 'star' : '')}>
                           <div class="timeline-date">{item.date}</div>
                           <h2>{item.rol} </h2>
                           <h4>{item.place}</h4>

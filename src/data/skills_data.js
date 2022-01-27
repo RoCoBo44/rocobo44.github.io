@@ -36,10 +36,6 @@ export const skills_data = [
     group: ["Full-stack"]
   },
   {
-    name: "HTML",
-    group: ["Full-stack"]
-  },
-  {
     name: "NodeJS",
     group: ["Full-stack"]
   },
@@ -128,7 +124,7 @@ export const skills_data = [
     group: ["Full-stack", "Databases", "Cloud Computing"]
   },
   {
-    name: "Data Storage",
+    name: "Cloud Storage",
     group: ["Full-stack", "Databases", "Cloud Computing"]
   },
   {

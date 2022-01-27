@@ -21,14 +21,22 @@ function Intro() {
                                 <Type_anim texts={[
                                             'Software Engineer',
                                             'Data Scientist',
-                                            'Full-Stack Developer',
+                                            'Full-Stack Dev',
                                             '3D/VFX Artist',
-                                            'Machine Learning Engineer']}
+                                            'ML Engineer']}
                                 />
                             </div>
                             <div class="hero-btn">
                                 <a class="btn" href="https://www.linkedin.com/in/rocobo/">Hire Me</a>
                                 <a class="btn" href="mailto: rocobo44@gmail.com">Contact Me</a>
+
+                                <div class="social">
+                                    <a href="https://twitter.com/RoCobo4"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/rocobo/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/rocobo/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://github.com/RoCoBo44"><i class="fab fa-github"></i></a>
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
