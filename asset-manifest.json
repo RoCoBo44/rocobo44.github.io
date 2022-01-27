@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4d72e206.css",
-    "main.js": "/static/js/main.7d9f30a8.js",
+    "main.css": "/static/css/main.7a92187d.css",
+    "main.js": "/static/js/main.12d0bbc8.js",
     "static/js/787.6ee238f9.chunk.js": "/static/js/787.6ee238f9.chunk.js",
     "static/media/sur.gif": "/static/media/sur.b961cc70bda6a350625f.gif",
     "static/media/xmas.gif": "/static/media/xmas.e9234f6458339e4e47ac.gif",
@@ -14,16 +14,17 @@
     "static/media/glance.jpg": "/static/media/glance.62cf6849f61d19265a4c.jpg",
     "static/media/WiggleGAN.gif": "/static/media/WiggleGAN.0c960cb1bc56fce9e64c.gif",
     "static/media/puralax.jpg": "/static/media/puralax.cecd5e389a44ce7e253a.jpg",
-    "static/media/YouTube.png": "/static/media/YouTube.b33f47b4fd394f932d54.png",
+    "static/media/YouTube.png": "/static/media/YouTube.bb3522b6951b6c333562.png",
     "static/media/sNNake.gif": "/static/media/sNNake.9291a1eb3cd8f3011f59.gif",
     "static/media/portfolio-1.jpg": "/static/media/portfolio-1.c73921efe602f92884b6.jpg",
+    "static/media/document.png": "/static/media/document.56a9f90a336f568f7e8e.png",
     "index.html": "/index.html",
-    "main.4d72e206.css.map": "/static/css/main.4d72e206.css.map",
-    "main.7d9f30a8.js.map": "/static/js/main.7d9f30a8.js.map",
+    "main.7a92187d.css.map": "/static/css/main.7a92187d.css.map",
+    "main.12d0bbc8.js.map": "/static/js/main.12d0bbc8.js.map",
     "787.6ee238f9.chunk.js.map": "/static/js/787.6ee238f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d72e206.css",
-    "static/js/main.7d9f30a8.js"
+    "static/css/main.7a92187d.css",
+    "static/js/main.12d0bbc8.js"
   ]
 }
