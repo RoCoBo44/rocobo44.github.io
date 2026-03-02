@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-gray-700 bg-white;
+  }
+}
+
+@layer components {
+
+  /* Layout */
+  .section-container-light {
+    @apply py-24 bg-white relative;
+  }
+
+  .section-container-gray {
+    @apply py-24 bg-gray-50 relative;
+  }
+
+  .content-wrapper {
+    @apply container mx-auto px-6 max-w-7xl relative z-10;
+  }
+
+  /* Typography / Headings */
+  .section-header {
+    @apply text-center mb-16;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-extrabold text-gray-800 drop-shadow-sm;
+  }
+
+  .section-subtitle-wrapper {
+    @apply flex items-center justify-center space-x-4 mb-4;
+  }
+
+  .section-subtitle {
+    @apply tracking-widest uppercase text-sm font-bold text-gray-500;
+  }
+
+  .section-line {
+    @apply w-12 h-1 bg-primary rounded-full;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply px-8 py-3 bg-primary text-white font-bold rounded-full shadow-lg shadow-primary/40 hover:shadow-xl hover:shadow-primary/30 hover:bg-red-700 transition-all duration-300 transform hover:-translate-y-1 inline-block;
+  }
+
+  .btn-outline {
+    @apply px-8 py-3 bg-transparent border-2 border-white text-white font-bold rounded-full shadow-lg hover:bg-white hover:text-primary transition-all duration-300 transform hover:-translate-y-1 inline-block;
+  }
+
+  .btn-filter {
+    @apply px-6 py-2 rounded-full font-semibold transition-all duration-300 border-2;
+  }
+
+  .btn-filter-active {
+    @apply bg-primary border-primary text-white shadow-lg shadow-primary/40 transform scale-105;
+  }
+
+  .btn-filter-inactive {
+    @apply bg-transparent border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700;
+  }
+
+  /* Cards */
+  .card-project {
+    @apply bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100;
+  }
+
+  .card-experience {
+    @apply p-8 rounded-3xl shadow-xl border backdrop-blur-md transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 relative;
+  }
+
+  .card-skill {
+    @apply bg-gray-50/50 backdrop-blur-sm rounded-2xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-xl hover:bg-white hover:border-primary/20 transition-all duration-300 flex items-center justify-center transform hover:-translate-y-2 cursor-pointer;
+  }
+
+  .card-about {
+    @apply bg-white/80 backdrop-blur-lg shadow-xl rounded-3xl p-10 md:p-16 border border-gray-100 overflow-hidden relative;
+  }
+
+  /* Forms */
+  .form-input {
+    @apply w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary/40 focus:bg-white transition-all;
+  }
+
+  .form-label {
+    @apply block text-sm font-bold text-gray-600 mb-2 ml-1;
+  }
+
+  /* Inputs etc */
+  .social-icon {
+    @apply w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:-translate-y-1 transition-all duration-300 shadow-lg text-white;
+  }
+
+  .header-icon {
+    @apply text-white hover:text-white/80 transition-transform transform hover:scale-110;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md;
+  }
+}
