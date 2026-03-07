@@ -98,8 +98,10 @@ onMounted(() => {
   const updateSize = () => {
     if (!renderer || !isTextureLoaded) return
 
-    const vWidth = window.innerWidth * 0.90
-    const vHeight = window.innerHeight * 0.85
+    const isMobile = window.innerWidth < 768
+    const isPortrait = window.innerHeight > window.innerWidth
+    const vWidth = isMobile ? window.innerWidth * 0.98 : window.innerWidth * 0.90
+    const vHeight = (isMobile && isPortrait) ? window.innerHeight * 0.8 : window.innerHeight * 0.85
     const windowAspect = vWidth / vHeight
     const imgAspect = imgWidth / imgHeight
 
@@ -137,11 +139,12 @@ onMounted(() => {
   const currentRotation = new THREE.Vector2(0, 0)
 
   // Dynamic Shader Parameters
+  const isMobile = window.innerWidth < 768
   const settings = {
-    idle_displacement: 0.0, // Subtle pop when idle
-    hover_displacement: 0.5, // Full pop on hover
-    idle_intensity: 0.0,  // Subtle parallax when idle
-    hover_intensity: 0.005  // Dramatic parallax on hover
+    idle_displacement: 0.0,
+    hover_displacement: isMobile ? 0.7 : 0.5, // slightly more punch on mobile
+    idle_intensity: 0.0,
+    hover_intensity: isMobile ? 0.008 : 0.005 // more parallax on mobile touch
   }
 
   let targetDisplacement = settings.idle_displacement
@@ -153,8 +156,18 @@ onMounted(() => {
     if (!renderer || !renderer.domElement) return
     const rect = renderer.domElement.getBoundingClientRect()
     if (rect.width === 0) return
-    const x = event.clientX - rect.left
-    const y = event.clientY - rect.top
+    
+    let clientX, clientY
+    if (event.touches) {
+      clientX = event.touches[0].clientX
+      clientY = event.touches[0].clientY
+    } else {
+      clientX = event.clientX
+      clientY = event.clientY
+    }
+
+    const x = clientX - rect.left
+    const y = clientY - rect.top
     const nx = (x / rect.width) * 2 - 1
     const ny = (y / rect.height) * 2 - 1
 
@@ -166,8 +179,6 @@ onMounted(() => {
     targetDisplacement = settings.hover_displacement
     targetIntensity = settings.hover_intensity
   }
-
-
 
   const onMouseLeave = () => {
     targetRotation.x = 0
@@ -184,6 +195,9 @@ onMounted(() => {
 
   canvasContainer.value.addEventListener('mousemove', onMouseMove)
   canvasContainer.value.addEventListener('mouseleave', onMouseLeave)
+  canvasContainer.value.addEventListener('touchstart', onMouseMove, { passive: true })
+  canvasContainer.value.addEventListener('touchmove', onMouseMove, { passive: true })
+  canvasContainer.value.addEventListener('touchend', onMouseLeave)
 
   const animate = () => {
     animationId = requestAnimationFrame(animate)
@@ -227,6 +241,8 @@ onBeforeUnmount(() => {
       ref="canvasContainer"
     >
     </div>
+    <div> Rodrigo Cobo </div>
+    <div class="text-gray-400 text-xs"> 4/4/1997 Tandil, Buenos Aires, Argentina</div>
   </div>
 </template>
 
