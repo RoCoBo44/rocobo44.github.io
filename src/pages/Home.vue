@@ -195,8 +195,11 @@ onMounted(() => {
 
   canvasContainer.value.addEventListener('mousemove', onMouseMove)
   canvasContainer.value.addEventListener('mouseleave', onMouseLeave)
-  canvasContainer.value.addEventListener('touchstart', onMouseMove, { passive: true })
-  canvasContainer.value.addEventListener('touchmove', onMouseMove, { passive: true })
+  canvasContainer.value.addEventListener('touchstart', onMouseMove, { passive: false })
+  canvasContainer.value.addEventListener('touchmove', (e) => {
+    if (e.cancelable) e.preventDefault()
+    onMouseMove(e)
+  }, { passive: false })
   canvasContainer.value.addEventListener('touchend', onMouseLeave)
 
   const animate = () => {
@@ -253,6 +256,7 @@ onBeforeUnmount(() => {
   align-items: center;
   transition: transform 0.5s ease;
   perspective: 1000px;
+  touch-action: none;
 }
 
 .image-container:hover {
